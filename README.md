@@ -29,7 +29,7 @@ Features
 - Settings
 
 ## Set-up Project
- - clone the project.
+ - Clone the project.
  - Create news-site database
  - Open database file and import news-site.sql to database
  
