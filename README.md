@@ -16,7 +16,7 @@ Features
 
 ### Blog Managment
 
-<img src="https://user-images.githubusercontent.com/93633549/200005532-1c870150-e0a6-45b2-9141-be33dc428e67.png" alt="blog-managment" width="800"/>
+<img src="https://user-images.githubusercontent.com/93633549/200009312-98a5783b-839a-4184-a8d8-ced5910de2cf.png" alt="blog-managment" width="800"/>
 Features
 
 - Authentication.
