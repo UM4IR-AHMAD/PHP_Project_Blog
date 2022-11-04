@@ -1,0 +1,325 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+}
+
+img{
+    width:100%;
+    height: 100%;
+}
+
+/* ---------------------------------------------------------------------------- HEAERE -------------------------------------------------------------- */
+header{
+    height: 130px;
+    max-width: 100vw;
+    min-width: 100%;
+    background-color: #1E90FF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div{
+    width: 190px;
+    height: 60px;
+    margin: auto 0;
+}
+
+/* header div img{
+    width:100%;
+    height: 100%;
+} */
+
+header nav{
+    background-color: rgb(53, 52, 52);
+    width: 100%;
+}
+
+header nav ul{
+    margin: 0 auto;
+    list-style: none;
+    width: max-content;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+header nav ul li{
+    padding: 8px 16px;
+    transition: all 300ms ease;
+}
+
+header nav ul li:hover{
+    background-color: #1E90FF;
+}
+
+header nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+.active{
+    background-color: #1E90FF;
+}
+
+/* ---------------------------------------------------------------------------- FOOTER -------------------------------------------------------------- */
+
+footer{
+    background-color: #1E90FF;
+    padding: 15px 0;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 0.8em;
+}
+
+
+/* ---------------------------------------------------------------------------- MAIN-container -------------------------------------------------------------- */
+
+
+#main-container{
+    width: 100%;
+    margin: 30px 0;
+
+    display: grid;
+    grid-template-columns: 650px 300px;
+    grid-template-rows: 120px max-content 1fr;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+/* ------------------------------------------------------- Main ---------------------------------------- */
+
+#main-container main{
+    box-sizing: border-box;
+    background-color: #fff;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+#main-container main h2{
+    border-bottom: 2px solid black;
+}
+
+
+/* This apply on seach and side */
+#main-container h4{
+    border-left: 3px solid #1E90FF;
+    padding: 3px 0 3px 5px;
+    margin: 0 0 10px 0;
+}
+
+#main-container a{
+    text-decoration: none;
+}
+
+main{
+    padding: 0 30px;
+
+}
+ 
+.post-normal-view, .post-small-view{
+    padding-bottom: 50px;
+    border-bottom: 2px solid lightgray ;
+}
+
+.post{
+    margin: 30px 0;
+    display: flex;
+}
+
+
+
+.image{
+    flex: 30%;
+    border: 3px solid lightgray;
+}
+
+.image:hover{
+    border-color: #1E90FF;
+}
+.post-content-container{
+    flex: 70%;
+    margin-left: 5%;
+}
+
+.post-content-container h3, .post-small-view h5{
+    margin: 0;
+    
+}
+
+.post-content-container h3 a{
+    color : #1E90FF;
+}
+
+.info span{
+    margin-right: 5px ;
+}
+
+.info span a, .info span i{
+    font-size: 0.6em;
+}
+
+.info span i{
+    color : #1E90FF;
+}
+
+.description{
+    margin: 10px 0 0 0;
+    font-size: 0.8em;
+    color: gray;
+    text-align: justify;
+}
+
+a.read-more{
+    background-color: #1e90f1;
+    padding: 5px 10px;
+    font-size: 0.6em;
+    color: #fff;
+    float: right;
+    transition: all 500ms ease;
+}
+
+a.read-more:hover{
+    background-color: rgb(53, 52, 52);
+}
+
+
+
+/* ------------------------------------- serach box ------------------------------------------------- */
+#main-container .search{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 20px;
+}
+
+
+
+#main-container .search form input[type='text']{
+    width: 160px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    padding: 8px 12px;
+    font-size: 0.6em;
+    border-color: rgba(0, 0, 0, 0.233);
+    transition: all 300ms ease;
+}
+
+#main-container .search form input[type='text']:focus{
+    outline: none;
+}
+
+#main-container .search form input[type='submit']{
+    width: 70px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    padding: 6px 12px;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-color: transparent;
+    background-color: #1E90FF;
+    color: #f1f1f1;
+}
+
+/* ---------------------------------------------------- Side box ----------------------------------------- */
+
+#main-container .side{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 20px;
+}
+
+.post-small-view{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.post-small-view .post{
+    margin: 0;
+}
+
+.post-small-view span{
+    margin-right: 2px;
+}
+
+.post-small-view .info  i, .post-small-view .info a{
+    font-size: 0.47em;
+}
+
+.post-small-view a.read-more{
+    float: right;
+    padding: 0 10px;
+    font-size: 0.6em;
+    margin: 5px 0;
+}
+
+/* ------------------------------- pagination ---------------------------------------- */
+
+
+.pagination-container{
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 0.7em;
+}
+
+.pagination-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.pagination-container ul li{
+    margin: 0 2px;
+}
+.pagination-container ul li a{
+    text-decoration: none;
+    padding: 5px 8px;
+    background-color: #1E90FF;
+    color: #f1f1f1;
+}
+
+.pagination-container ul li a:active{
+    background-color: #a9d1f8;
+}
+
+.pagination-container ul li a.Highlight-Page-Number{
+    background-color: #002a55;
+
+}
+
+
+
+/* ========================================= Post page ==================================== */
+
+.post-full-view{
+    border-bottom: none;
+    padding-top: 40px;
+}
+
+.post-full-view .post{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .post-full-view .image{
+    flex: initial;
+    width: 80%;
+    margin-bottom: 20px;
+ }
